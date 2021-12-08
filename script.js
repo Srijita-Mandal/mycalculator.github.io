@@ -165,7 +165,7 @@ const calculateLog = () =>{
     } else if(log == 0){
         document.getElementById('resultLog').innerHTML = `-∞` ;
     } else{
-        rasultLog = logarithm(parseInt(fact));
+        rasultLog = logarithm(parseInt(log));
         resultLogFinal = rasultLog.toFixed(2);
         document.getElementById('resultLog').innerHTML = `Logarithm= ${resultLogFinal}` ;
     }
