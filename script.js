@@ -39,13 +39,13 @@ const calculator = () => {
 
     switch(valOpe){
         case 'sum':
-            document.getElementById('resultCalculator').innerHTML = `= ${number1+number2}` ;
+            document.getElementById('resultCalculator').innerHTML = `Answer= ${number1+number2}` ;
             break;
         case 'subs':
-            document.getElementById('resultCalculator').innerHTML = `= ${number1-number2}` ;
+            document.getElementById('resultCalculator').innerHTML = `Answer= ${number1-number2}` ;
             break;
         case 'mult':
-            document.getElementById('resultCalculator').innerHTML = `= ${number1*number2}` ;
+            document.getElementById('resultCalculator').innerHTML = `Answer= ${number1*number2}` ;
             break;
         case 'div':
             if(number2==0){
@@ -53,14 +53,14 @@ const calculator = () => {
             } else{
                 let division = number1/number2;
                 let diviFinal = division.toFixed(2);
-                document.getElementById('resultCalculator').innerHTML = `= ${diviFinal}` ;
+                document.getElementById('resultCalculator').innerHTML = `Answer= ${diviFinal}` ;
             }
             break;
         case 'modu':
             if(number2==0){
                 document.getElementById('resultCalculator').innerHTML = `Error!` ;
             } else{
-            document.getElementById('resultCalculator').innerHTML = `= ${number1%number2}` ;
+            document.getElementById('resultCalculator').innerHTML = `Answer= ${number1%number2}` ;
             }
             break;
         default:
